@@ -61,15 +61,13 @@ int main(int argc, const char * argv[]) {
     for (auto i: zip_longest(cycle(vecInit,2), cycle(vecFloat,2)) )
         cout << i << " ";
     cout << endl << endl;
-    
-    
+
     cout << "####  permutation:  ####";
     cout << endl << "permutation of vector:{1,2,3,4}" << endl;
     for (auto i: permutation(vecInit) )
         cout << i;
     cout << endl << endl;
-    
-    
+
     cout << "####  Filter False:  ####";
     cout << endl << "Filter all numbers less than 3 in vector{1,2,3,4}: " << endl;
     for (auto i: filter_false(vecInit, lessThan()) )
